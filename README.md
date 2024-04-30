@@ -1,5 +1,7 @@
 # react-native-stack-view
 
+Write your view component in an elegant way!
+
 Lightweight library to create stack view in react native
 
 ## Installation
@@ -11,11 +13,38 @@ npm install react-native-stack-view
 ## Usage
 
 ```js
-import { multiply } from 'react-native-stack-view';
+import Stack from 'react-native-stack-view';
 
 // ...
 
-const result = await multiply(3, 7);
+<Stack
+    direction={'row'}
+    gap={20}
+    color={'lightred'}
+    margin={5}
+    padding={1}
+>
+    <YourComponent1/>
+    <YourComponent2/>
+    <YourComponent3/>
+    <YourComponent4/>
+</Stack>
+```
+
+## Props 
+
+```js
+
+type StackProps = {
+	children: ReactNode
+	margin?: DimensionValue
+	padding?: DimensionValue
+	direction?: FlexStyle["flexDirection"]
+	gap?:  FlexStyle["gap"]
+	rowGap?:  FlexStyle["rowGap"]
+	color?: ViewStyle["backgroundColor"]
+}
+
 ```
 
 ## Contributing
@@ -26,6 +55,3 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 
 MIT
 
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
