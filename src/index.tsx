@@ -8,6 +8,8 @@ type StackProps = {
 	padding?: DimensionValue
 	direction?: FlexStyle["flexDirection"]
 	gap?:  FlexStyle["gap"]
+	justifyContent?: FlexStyle["justifyContent"]
+	alignItems: FlexStyle['alignItems'],
 	rowGap?:  FlexStyle["rowGap"]
 	color?: ViewStyle["backgroundColor"]
 }
@@ -18,7 +20,9 @@ const Stack = ({
 	padding, 
 	direction,
 	gap,
+	justifyContent,
 	rowGap,
+	alignItems,
 	color
 }: StackProps) => 
 {
@@ -29,6 +33,8 @@ const Stack = ({
 				padding: padding,
 				flexDirection: direction,
 				gap: gap,
+				alignItems: alignItems,
+				justifyContent: justifyContent,
 				rowGap: rowGap,
 				backgroundColor: color
 			}}
