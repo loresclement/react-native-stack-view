@@ -5,6 +5,8 @@ import { View, type DimensionValue, type FlexStyle, type ViewStyle } from "react
 type StackProps = {
 	children: ReactNode
 	margin?: DimensionValue
+	marginVertical?: DimensionValue,
+	marginHorizontal?: DimensionValue,
 	padding?: DimensionValue
 	direction?: FlexStyle["flexDirection"]
 	gap?:  FlexStyle["gap"]
@@ -19,6 +21,8 @@ const Stack = ({
 	margin, 
 	padding, 
 	direction,
+	marginHorizontal,
+	marginVertical,
 	gap,
 	justifyContent,
 	rowGap,
@@ -33,6 +37,8 @@ const Stack = ({
 				padding: padding,
 				flexDirection: direction,
 				gap: gap,
+				marginVertical: marginVertical,
+				marginHorizontal: marginHorizontal,
 				alignItems: alignItems,
 				justifyContent: justifyContent,
 				rowGap: rowGap,
