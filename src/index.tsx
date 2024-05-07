@@ -9,7 +9,7 @@ type StackProps = {
 	direction?: FlexStyle["flexDirection"]
 	gap?:  FlexStyle["gap"]
 	justifyContent?: FlexStyle["justifyContent"]
-	alignItems: FlexStyle['alignItems'],
+	alignItems?: FlexStyle['alignItems'],
 	rowGap?:  FlexStyle["rowGap"]
 	color?: ViewStyle["backgroundColor"]
 }
