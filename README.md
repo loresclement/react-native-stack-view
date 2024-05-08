@@ -38,9 +38,17 @@ import Stack from 'react-native-stack-view';
 type StackProps = {
 	children: ReactNode
 	margin?: DimensionValue
+	marginVertical?: DimensionValue,
+	marginHorizontal?: DimensionValue,
+	marginRight?: DimensionValue,
+	marginLeft?: DimensionValue,
+	marginTop?: DimensionValue,
+	marginBottom?: DimensionValue,
 	padding?: DimensionValue
 	direction?: FlexStyle["flexDirection"]
 	gap?:  FlexStyle["gap"]
+	justifyContent?: FlexStyle["justifyContent"]
+	alignItems?: FlexStyle['alignItems'],
 	rowGap?:  FlexStyle["rowGap"]
 	color?: ViewStyle["backgroundColor"]
 }

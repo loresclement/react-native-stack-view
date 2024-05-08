@@ -7,6 +7,10 @@ type StackProps = {
 	margin?: DimensionValue
 	marginVertical?: DimensionValue,
 	marginHorizontal?: DimensionValue,
+	marginRight?: DimensionValue,
+	marginLeft?: DimensionValue,
+	marginTop?: DimensionValue,
+	marginBottom?: DimensionValue,
 	padding?: DimensionValue
 	direction?: FlexStyle["flexDirection"]
 	gap?:  FlexStyle["gap"]
@@ -23,6 +27,10 @@ const Stack = ({
 	direction,
 	marginHorizontal,
 	marginVertical,
+	marginBottom,
+	marginLeft,
+	marginRight,
+	marginTop,
 	gap,
 	justifyContent,
 	rowGap,
@@ -39,6 +47,10 @@ const Stack = ({
 				gap: gap,
 				marginVertical: marginVertical,
 				marginHorizontal: marginHorizontal,
+				marginBottom: marginBottom,
+				marginTop: marginTop,
+				marginLeft: marginLeft,
+				marginRight: marginRight,
 				alignItems: alignItems,
 				justifyContent: justifyContent,
 				rowGap: rowGap,
