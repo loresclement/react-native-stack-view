@@ -12,6 +12,7 @@ type StackProps = {
 	marginTop?: DimensionValue,
 	marginBottom?: DimensionValue,
 	padding?: DimensionValue
+	wrap?: FlexStyle['flexWrap'],
 	direction?: FlexStyle["flexDirection"]
 	gap?:  FlexStyle["gap"]
 	justifyContent?: FlexStyle["justifyContent"]
@@ -35,7 +36,8 @@ const Stack = ({
 	justifyContent,
 	rowGap,
 	alignItems,
-	color
+	color,
+	wrap
 }: StackProps) => 
 {
 	return(
@@ -54,7 +56,8 @@ const Stack = ({
 				alignItems: alignItems,
 				justifyContent: justifyContent,
 				rowGap: rowGap,
-				backgroundColor: color
+				backgroundColor: color,
+				flexWrap: wrap
 			}}
 		>
 			{children}

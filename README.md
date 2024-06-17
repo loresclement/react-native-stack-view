@@ -46,6 +46,7 @@ type StackProps = {
 	marginBottom?: DimensionValue,
 	padding?: DimensionValue
 	direction?: FlexStyle["flexDirection"]
+	wrap?: FlexStyle['flexWrap'],
 	gap?:  FlexStyle["gap"]
 	justifyContent?: FlexStyle["justifyContent"]
 	alignItems?: FlexStyle['alignItems'],
