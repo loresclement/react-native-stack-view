@@ -44,6 +44,10 @@ type StackProps = {
 	marginLeft?: DimensionValue,
 	marginTop?: DimensionValue,
 	marginBottom?: DimensionValue,
+	paddingRight?: DimensionValue,
+	paddingLeft?: DimensionValue,
+	paddingTop?: DimensionValue,
+	paddingBottom?: DimensionValue,
 	padding?: DimensionValue
 	direction?: FlexStyle["flexDirection"]
 	wrap?: FlexStyle['flexWrap'],
